@@ -2,10 +2,10 @@ import { Miner } from "./helpers";
 
 async function main() {
   const cookie = import.meta.env.COOKIE;
+  const username = import.meta.env.USERNAME;
   const tags = import.meta.env.TAGS.split(',');
-  const miner = new Miner(cookie);
 
-  const username = "god";
+  const miner = new Miner(cookie);
 
   let isUpdated = false;
   let iteration = 0;
